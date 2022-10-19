@@ -22,6 +22,7 @@ const canMoveDown = () => canMove(grid.cellsByColumn.map(column => [...column].r
 const canMoveLeft = () => canMove(grid.cellsByRow)
 const canMoveRight = () => canMove(grid.cellsByRow.map(column => [...column].reverse()))
 
+// TODO: Detect mobile swipes as well
 const handleInput = (event) => {
     switch (event.key) {
         case "ArrowUp":
